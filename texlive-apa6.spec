@@ -1,11 +1,11 @@
-# revision 24723
+# revision 24842
 # category Package
 # catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2011-12-02 13:40:26 +0100
+# catalog-date 2011-12-13 08:16:28 +0100
 # catalog-license lppl1.3
-# catalog-version 1.02
+# catalog-version 1.12
 Name:		texlive-apa6
-Version:	1.02
+Version:	1.12
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
@@ -18,6 +18,9 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
+Conflicts:	texlive-texmf <= 20110705-3
+Conflicts:	texlive-doc <= 20110705-3
+Conflicts:	texlive-source <= 20110705-3
 
 %description
 The class provides a full set of facilities in three different
@@ -31,19 +34,19 @@ The class can mask author identity for copies for use in masked
 peer review.
 
 %pre
-    %{_sbindir}/texlive.post
+    %_texmf_mktexlsr_pre
 
 %post
-    %{_sbindir}/texlive.post
+    %_texmf_mktexlsr_post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
+	%_texmf_mktexlsr_pre
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
+	%_texmf_mktexlsr_post
     fi
 
 #-----------------------------------------------------------------------
@@ -53,15 +56,16 @@ peer review.
 %{_texmfdistdir}/tex/latex/apa6/config/APAdutch.txt
 %{_texmfdistdir}/tex/latex/apa6/config/APAendfloat.cfg
 %{_texmfdistdir}/tex/latex/apa6/config/APAenglish.txt
+%{_texmfdistdir}/tex/latex/apa6/config/APAgerman.txt
 %{_texmfdistdir}/tex/latex/apa6/config/APAgreek.txt
+%{_texmfdistdir}/tex/latex/apa6/config/APAngerman.txt
 %doc %{_texmfdistdir}/doc/latex/apa6/README
+%doc %{_texmfdistdir}/doc/latex/apa6/README.txt
 %doc %{_texmfdistdir}/doc/latex/apa6/apa6.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/apa6.ptex
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/Figure1.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/bibliography.bib
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/longsample.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/longsample.tex
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/shortsample.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/shortsample.tex
 #- source
 %doc %{_texmfdistdir}/source/latex/apa6/apa6.dtx
