@@ -1,12 +1,12 @@
-# revision 24842
+# revision 25124
 # category Package
 # catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2011-12-13 08:16:28 +0100
+# catalog-date 2012-01-16 17:12:06 +0100
 # catalog-license lppl1.3
-# catalog-version 1.12
+# catalog-version 1.13
 Name:		texlive-apa6
-Version:	1.12
-Release:	2
+Version:	1.13
+Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
