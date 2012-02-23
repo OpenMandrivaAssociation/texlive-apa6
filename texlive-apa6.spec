@@ -1,11 +1,11 @@
-# revision 25124
+# revision 25403
 # category Package
 # catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2012-01-16 17:12:06 +0100
+# catalog-date 2012-02-15 15:50:59 +0100
 # catalog-license lppl1.3
-# catalog-version 1.13
+# catalog-version 1.2
 Name:		texlive-apa6
-Version:	1.13
+Version:	1.20
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
@@ -20,15 +20,16 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The class provides a full set of facilities in three different
-output modes (journal-like appearance, double-spaced
-manuscript, LaTeX-like document), in contrast to the earlier
-apa6e, which only formats double-spaced manuscripts in APA
-style. The class formats documents in APA style (6th Edition).
-It is built on the apa class (which is no longer maintained),
-and has been updated to comply with 6th-Edition requirements.
-The class can mask author identity for copies for use in masked
-peer review.
+The class formats documents in APA style (6th Edition). It
+provides a full set of facilities in three different output
+modes (journal-like appearance, double-spaced manuscript,
+LaTeX-like document), in contrast to the earlier apa6e, which
+only formats double-spaced manuscripts in APA style. The class
+can mask author identity for copies for use in masked peer
+review. Citations are provided using the apacite bundle; the
+class requires that package if citations are to be typeset. The
+class is a development of the apa class (which is no longer
+maintained).
 
 %post
     %{_sbindir}/texlive.post
@@ -42,6 +43,7 @@ peer review.
 %files
 %{_texmfdistdir}/tex/latex/apa6/apa6.cls
 %{_texmfdistdir}/tex/latex/apa6/config/APAamerican.txt
+%{_texmfdistdir}/tex/latex/apa6/config/APAbritish.txt
 %{_texmfdistdir}/tex/latex/apa6/config/APAdutch.txt
 %{_texmfdistdir}/tex/latex/apa6/config/APAendfloat.cfg
 %{_texmfdistdir}/tex/latex/apa6/config/APAenglish.txt
