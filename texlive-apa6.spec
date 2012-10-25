@@ -1,11 +1,11 @@
-# revision 25852
+# revision 28045
 # category Package
 # catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2012-04-04 15:21:46 +0200
+# catalog-date 2012-10-20 22:28:24 +0200
 # catalog-license lppl1.3
-# catalog-version 1.3
+# catalog-version 2.0
 Name:		texlive-apa6
-Version:	1.30
+Version:	2.0
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
@@ -54,6 +54,7 @@ maintained).
 %doc %{_texmfdistdir}/doc/latex/apa6/README
 %doc %{_texmfdistdir}/doc/latex/apa6/README.txt
 %doc %{_texmfdistdir}/doc/latex/apa6/apa6.pdf
+%doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/TeX2WordForapa6.bas
 %doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/apa6.ptex
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/Figure1.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/bibliography.bib
