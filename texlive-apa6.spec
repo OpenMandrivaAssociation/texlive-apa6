@@ -1,11 +1,11 @@
-# revision 25852
+# revision 30957
 # category Package
 # catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2012-04-04 15:21:46 +0200
+# catalog-date 2013-06-26 19:53:21 +0200
 # catalog-license lppl1.3
-# catalog-version 1.3
+# catalog-version 2.13
 Name:		texlive-apa6
-Version:	1.30
+Version:	2.13
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
@@ -54,6 +54,7 @@ maintained).
 %doc %{_texmfdistdir}/doc/latex/apa6/README
 %doc %{_texmfdistdir}/doc/latex/apa6/README.txt
 %doc %{_texmfdistdir}/doc/latex/apa6/apa6.pdf
+%doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/TeX2WordForapa6.bas
 %doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/apa6.ptex
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/Figure1.pdf
 %doc %{_texmfdistdir}/doc/latex/apa6/samples/bibliography.bib
@@ -72,35 +73,3 @@ maintained).
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Fri Apr 13 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.30-1
-+ Revision: 790523
-- Update to latest release.
-
-* Fri Mar 02 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.26-1
-+ Revision: 781913
-- Update to latest release.
-
-* Thu Feb 23 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.20-1
-+ Revision: 779412
-- Update to latest release.
-
-* Thu Jan 19 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.13-1
-+ Revision: 762527
-- Update to latest upstream package
-
-* Wed Jan 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.12-2
-+ Revision: 759890
-- Rebuild to reduce used resources
-
-* Sat Dec 17 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.12-1
-+ Revision: 743237
-- texlive-apa6
-
-* Fri Dec 09 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.02-1
-+ Revision: 739578
-- texlive-apa6
-- texlive-apa6
-
