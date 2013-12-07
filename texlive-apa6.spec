@@ -6,7 +6,7 @@
 # catalog-version 2.13
 Name:		texlive-apa6
 Version:	2.13
-Release:	4
+Release:	5
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
