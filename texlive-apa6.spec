@@ -1,12 +1,6 @@
-# revision 30957
-# category Package
-# catalog-ctan /macros/latex/contrib/apa6
-# catalog-date 2013-06-26 19:53:21 +0200
-# catalog-license lppl1.3
-# catalog-version 2.13
 Name:		texlive-apa6
-Version:	2.13
-Release:	9
+Version:	2.32
+Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
@@ -41,28 +35,10 @@ maintained).
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/apa6/apa6.cls
-%{_texmfdistdir}/tex/latex/apa6/config/APAamerican.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAbritish.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAczech.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAdutch.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAendfloat.cfg
-%{_texmfdistdir}/tex/latex/apa6/config/APAenglish.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAgerman.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAgreek.txt
-%{_texmfdistdir}/tex/latex/apa6/config/APAngerman.txt
-%doc %{_texmfdistdir}/doc/latex/apa6/README
-%doc %{_texmfdistdir}/doc/latex/apa6/README.txt
-%doc %{_texmfdistdir}/doc/latex/apa6/apa6.pdf
-%doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/TeX2WordForapa6.bas
-%doc %{_texmfdistdir}/doc/latex/apa6/pseudoTeX/apa6.ptex
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/Figure1.pdf
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/bibliography.bib
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/longsample.tex
-%doc %{_texmfdistdir}/doc/latex/apa6/samples/shortsample.tex
+%{_texmfdistdir}/tex/latex/apa6
+%doc %{_texmfdistdir}/doc/latex/apa6
 #- source
-%doc %{_texmfdistdir}/source/latex/apa6/apa6.dtx
-%doc %{_texmfdistdir}/source/latex/apa6/apa6.ins
+%doc %{_texmfdistdir}/source/latex/apa6
 
 #-----------------------------------------------------------------------
 %prep
