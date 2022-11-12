@@ -5,9 +5,9 @@ Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.r53406.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.doc.r53406.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.source.r53406.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
