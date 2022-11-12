@@ -1,13 +1,13 @@
 Name:		texlive-apa6
-Version:	2.33
+Version:	53406
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.r53406.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.doc.r53406.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.source.r53406.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +26,12 @@ class is a development of the apa class (which is no longer
 maintained).
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -42,7 +42,8 @@ maintained).
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
