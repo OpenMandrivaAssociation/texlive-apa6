@@ -1,6 +1,6 @@
 Name:		texlive-apa6
-Version:	53406
-Release:	2
+Version:	67848
+Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
