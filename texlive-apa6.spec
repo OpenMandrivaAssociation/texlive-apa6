@@ -3,7 +3,7 @@ Version:	67848
 Release:	1
 Summary:	Format documents in APA style (6th edition)
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/apa6
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/apa6
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apa6.doc.r%{version}.tar.xz
